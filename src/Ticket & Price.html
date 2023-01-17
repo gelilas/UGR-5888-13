@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>AFRO CINEMA | Welcome</title>
-    <script src="https://kit.fontawesome.com/4169293164.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-    <div class="container">
-        <div id="branding">
-           <h1><span class="highlight">AFRO</span> CINEMA</h1> 
+    <header class="header">
+        <div class="container">
+            <div id="container__branding">
+               <h1 class="branding__h1"><span class="branding--highlight">AFRO</span> CINEMA</h1> 
+            </div>
+        
+            <nav class="header__nav">
+                <ul class="nav__ul">
+                    <li ><a href="Home.html">Home</a></li>
+                    <li><a href="See a movie.html">See a movie</a></li>
+                    <li class="current"><a href="Ticket & Price.html">Ticket & Price</a></li>
+                    <li><a href="Food & Drinks.html">Food & Drinks</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                </ul>
+            </nav>
+            
         </div>
-        <img src="./img/film strip.jpg" alt="movie film strip" width="100%"  height="200">
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="See a movie.html">See a movie</a></li>
-                <li class="current"><a href="Ticket & Price.html">Ticket & Price</a></li>
-                <li><a href="Food & Drinks.html">Food & Drinks</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="About us.html">About us</a></li>
-            </ul>
-         </nav>
-    </div>
+        <div class="header__common">
+            <h4>Ticket & Price</h4> 
+        
+        </div>
     </header>
+
     <main>
-        <h2>VIP SEATS</h2>
-        <table>
+
+        <h2 class="main__titles">VIP SEATS</h2>
+        <table class="main__table">
             <tr>
                 <th>Ticket</th>
                 <th>Pricing</th>
@@ -54,8 +61,9 @@
                 <td>90.00</td>
             </tr>
         </table>
-        <h2>REGULAR SEATS</h2>
-        <table>
+
+        <h2 class="main__titles">REGULAR SEATS</h2>
+        <table class="main__table">
             <tr>
                 <th>Ticket</th>
                 <th>Pricing</th>
@@ -81,30 +89,36 @@
                 <td>80.00</td>
             </tr>
         </table>
+    
     </main>
-    <footer>
-        <hr>
-        <div class="icons">
-            <ul>
-                <li><img src="img/facebook.jpg" alt="facebook"><a href="#">Like</a></li>
-                <li><img src="img/twitter.jpg" alt="twitter"><a href="#">Follow</a></li>
-                <li><img src="img/telegram.jpg" alt="telegram"><a href="#">Join</a></li>
-                <li><img src="img/youtube.jpg" alt="youtube"><a href="#">Subscribe</a></li>
-                <li><img src="img/instagram.jpg" alt="instagram"><a href="#">Follow</a></li>
-            </ul>
+    <footer class="footer">
+        <hr>    
+            <div class="footer__icons">
+                <ul class="footer_icons__ul">
+                    <li class="footer__li"><img src="img/facebook.jpg" alt="facebook"><a href="#">Like</a></li>
+                    <li class="footer__li"><img src="img/twitter.jpg" alt="twitter"><a href="#">Follow</a></li>
+                    <li class="footer__li"><img src="img/telegram.jpg" alt="telegram"><a href="#">Join</a></li>
+                    <li class="footer__li"><img src="img/youtube.jpg" alt="youtube"><a href="#">Subscribe</a></li>
+                    <li class="footer__li"><img src="img/instagram.jpg" alt="instagram"><a href="#">Follow</a></li>
+                </ul>
+            </div>
+        <div class="footer__grid">
+                <ul>
+                    <h2><img src="img/mail.jpg" alt="mail">Contact us</h2>
+                    <p><a href="#">afrocinema@gmail.com</a></p>
+                </ul>
+                <ul>
+                    <h2>AFRO CINEMA</h2>
+                    <h3>IMPROVE YOUR FILM INSIGHT</h3>
+                </ul>
+                    <ul class="footer__ul">
+                        <li class="footer__li"><a href="#">FAQ</a></li>
+                        <li class="footer__li"><a href="#">PRIVACY</a></li>
+                        <li class="footer__li"><a href="#">TERMS and USE</a></li>
+                    </ul>
+
         </div>
-        <div class="container">
-            <p><img src="img/mail.jpg" alt="mail">Contact us <a href="#">afrocinema@gmail.com</a></p>
-            <h2>AFRO CINEMA</h2>
-            <h2>IMPROVE YOUR FILM INSIGHT</h2>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">PRIVACY</a></li>
-                <li><a href="#">TERMS and USE</a></li>
-            </ul>
-           
-        </div>
-        <p> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
+        <p class="footer__p"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
     </footer>
 </body>
 </html>
