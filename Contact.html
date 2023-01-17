@@ -16,30 +16,58 @@
         
             <nav class="header__nav">
                 <ul class="nav__ul">
-                    <li><a href="Home.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li><a href="See a movie.html">See a movie</a></li>
                     <li><a href="Ticket & Price.html">Ticket & Price</a></li>
                     <li><a href="Food & Drinks.html">Food & Drinks</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li class="current"><a href="About us.html">About us</a></li>
+                    <li class="current"><a href="Contact.html">Contact</a></li>
+                    <li><a href="About us.html">About us</a></li>
                 </ul>
             </nav>
             
         </div>
         <div class="header__common">
-            <h4> About us</h4> 
+            <h4> Contact</h4> 
         
         </div>
     </header>
     <main>
-        <section id="showcases">
-            <div class="container">
-                <img src="./img/eating.jpg" alt="Orange Wine And Food Fair" width="100%" height="500"><br>
+        <div class="form">
+            <div class="contact__form">           
+                 
+                <form class="contact__form__quote">
+                    <h2>BE A MEMBER</h2>
+                    <div>
+                        <label for="First_name">First name</label>
+                        <input id="First_name" type="text" placeholder="First Name" name="name" >
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Last_name">Last name</label>
+                        <input id="Last_name" type="text" placeholder="Last Name" name="name" >
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+                <h2>JOIN OUR MAILING LIST</h2>
+                <form class="contact__form__quote">
+                    <div>
+                        <label for="Join_email">Email</label>
+                        <input id="Join_email" type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <br>
+                    <button id="subscribe" type="submit">Subscribe</button>
+                </form>
+
             </div>
-        <div class="showcaes__mission">
-        <h1>Mission</h1>
-        <p>Through the art of film, the AFRO Cinema improves the cultural vitality of the people.To inspire, inform and entertain through the universal language of cinema arts and to serve as a cultural and educational resource for all.</p>
-        </div> 
+
+
+        </div>
     </main>
     <footer class="footer">
         <hr>    
@@ -70,5 +98,6 @@
         </div>
         <p class="footer__p"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
