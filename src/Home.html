@@ -4,117 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
     <title>AFRO CINEMA | Welcome</title>
+    <style>
+        .showcase{
+        background-image: url('img/welcome2.jpg') ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding:15%;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-    <div class="container">
-        <div id="container__branding">
-           <h1 class="branding__h1"><span class="branding--highlight">AFRO</span> CINEMA</h1> 
-        </div>
-    
-        <nav class="header__nav">
-            <ul class="nav__ul">
-                <li class="current"><a href="Home.html">Home</a></li>
-                <li><a href="See a movie.html">See a movie</a></li>
-                <li><a href="Ticket & Price.html">Ticket & Price</a></li>
-                <li><a href="Food & Drinks.html">Food & Drinks</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="About us.html">About us</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-    <div class="header__common">
-        <h4> Home</h4> 
-    
-    </div>
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <p class=" navbar-brand fs-1"><span class="navbar-brand text-warning fs-1 "> AFRO</span>CINEMA</p>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="Home.html" class="nav-link text-warning">Home</a></li>
+                    <li class="nav-item"><a href="See a movie.html" class="nav-link">See a movie</a></li>
+                    <li class="nav-item"><a href="Ticket & Price.html" class="nav-link">Ticket & Price</a></li>
+                    <li class="nav-item"><a href="Food & Drinks.html" class="nav-link">Food & Drinks</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
 
-    <main>
-    <section id="showcase">
-        <div>
-            <h1>WELCOME TO AFRO CINEMA</h1>
+                </ul>
+            </div>    
         </div>
+    </nav>
+</header>
+<main>  
+
+    <section class="showcase d-flex justify-content-center">
+        <h1 class="text-light">WELCOME TO AFRO CINEMA</h1>
     </section>
-    <section>
-            <audio controls>
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <audio controls class="w-75">
                 <source src="./audios/welcometoAfrocinema.mp3" type="audio/mpeg">
                 
             </audio>
             <details class="audio_decoration"><summary> welcome to Afro Cinema</summary>
                 Welcome to Afros Cinema. Sit back, relax, and enjoy your movie. Here at Afros Cinema, we try to give you the best cinematic experience. Afros Cinema improve your film insight.
             </details>
-    </section>
-    <section id="main">
-        <div class="container">
-            <div class="container__center">
-                <h1>Movies at AFRO CINEMA</h1>
+            <h1>Movies at AFRO CINEMA</h1>
 
-            </div>
-            
-            <div class="holder1">
-
-                <div class="headi"><h2 class="headi__h2">Now Playing</h2></div>
-
-                <div class="holder--flex">
-                    
-                    <div><img src="./img/avatar.jpg" alt="Avatar"></div>
-                    <div><p>The Way of Water had its world premiere on December 6, 2022, at the Odeon Luxe Leicester Square in London, and was theatrically released in the United States on December 16, 2022, distributed by 20th Century Studios.</p></div>
-                    
-                </div>
+            <h3 class="text-start p-5">Now Playing</h3>
+            <div class="d-sm-flex">
+                <img  class="img-fluid pe-4 ps-4 pb-3 w-50" src="./img/avatar.jpg" alt="Avatar">
+                <p>The Way of Water had its world premiere on December 6, 2022, at the Odeon Luxe Leicester Square in London, and was theatrically released in the United States on December 16, 2022, distributed by 20th Century Studios.</p>
             </div>
 
-
-            <div class="holder2">
-                <div class="headi"><h2 class="headi__h2">Coming Soon</h2></div>
-                <div class="holder--flex"> 
-                    <div><p>The Woman King is a 2022 American epic alternate history action drama film about the Agojie, the all-female warrior unit that protected the West African kingdom of Dahomey during the 17th to 19th centuries. Set in the 1820s, the film stars Viola Davis as a general who trains the next generation of warriors to fight their enemies. It is directed by Gina Prince-Bythewood and written by Dana Stevens, based on a story she wrote with Maria Bello. The film also stars Thuso Mbedu, Lashana Lynch, Sheila Atim, Hero Fiennes Tiffin, and John Boyega.</p></div>
-                    <div><img src="./img/the woman king.jpg" alt="The woman king" width="400" height="300"></div>
-                </div>
+            <h3 class="text-start p-5">Coming Soon</h3>
+            <div class="d-sm-flex">
+                <p>The Woman King is a 2022 American epic alternate history action drama film about the Agojie, the all-female warrior unit that protected the West African kingdom of Dahomey during the 17th to 19th centuries. Set in the 1820s, the film stars Viola Davis as a general who trains the next generation of warriors to fight their enemies. It is directed by Gina Prince-Bythewood and written by Dana Stevens, based on a story she wrote with Maria Bello. The film also stars Thuso Mbedu, Lashana Lynch, Sheila Atim, Hero Fiennes Tiffin, and John Boyega.</p>
+                <img  class="img-fluid pe-4 ps-4 pb-3 w-50" src="./img/the woman king.jpg" alt="The woman king" >
             </div>
 
-
-            <div class="holder3">
-                <div class="headi"><h2 class="headi__h2">On Demand</h2></div>
-
-                <div class="holder--flex">
-                    <div><img src="./img/black panther.jpg" alt="black panther" width="428" height="400"></div>
-                    <div><p>Wakanda Forever is a 2022 American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe. Directed by Ryan Coogler, who co-wrote the screenplay with Joe Robert Cole, the film stars Letitia Wright as Shuri / Black Panther, alongside Lupita Nyong'o, Danai Gurira, Winston Duke, Florence Kasumba, Dominique Thorne, Michaela Coel, Tenoch Huerta Mejía, Martin Freeman, Julia Louis-Dreyfus, and Angela Bassett. In the film, the leaders of Wakanda fight to protect their nation in the wake of King T'Challa's death.</p></div>
-                </div>
+            <h3 class="text-start p-5">On Demand</h3>
+            <div class="d-sm-flex">
+                <img class="img-fluid pe-4 ps-4 pb-3 w-50" src="./img/black panther.jpg" alt="black panther">
+                <p>Wakanda Forever is a 2022 American superhero film based on the Marvel Comics character Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to Black Panther and the 30th film in the Marvel Cinematic Universe. Directed by Ryan Coogler, who co-wrote the screenplay with Joe Robert Cole, the film stars Letitia Wright as Shuri / Black Panther, alongside Lupita Nyong'o, Danai Gurira, Winston Duke, Florence Kasumba, Dominique Thorne, Michaela Coel, Tenoch Huerta Mejía, Martin Freeman, Julia Louis-Dreyfus, and Angela Bassett. In the film, the leaders of Wakanda fight to protect their nation in the wake of King T'Challa's death.</p>
             </div>
         </div>
     </section>
-    </main>
-    <footer class="footer">
-        <hr>    
-            <div class="footer__icons">
-                <ul class="footer_icons__ul">
-                    <li class="footer__li"><img src="img/facebook.jpg" alt="facebook"><a href="#">Like</a></li>
-                    <li class="footer__li"><img src="img/twitter.jpg" alt="twitter"><a href="#">Follow</a></li>
-                    <li class="footer__li"><img src="img/telegram.jpg" alt="telegram"><a href="#">Join</a></li>
-                    <li class="footer__li"><img src="img/youtube.jpg" alt="youtube"><a href="#">Subscribe</a></li>
-                    <li class="footer__li"><img src="img/instagram.jpg" alt="instagram"><a href="#">Follow</a></li>
-                </ul>
-            </div>
-        <div class="footer__grid">
-                <ul>
+</main> 
+
+
+<footer>
+    <section class="text-center p-10">
+        <div class="d-sm-flexd-flex aligns-items-center justify-content-center ">
+            <img src="img/facebook.jpg" alt="facebook"><a href="#" class="text-dark">Like</a>
+            <img src="img/twitter.jpg" alt="twitter"><a href="#" class="text-dark">Follow</a>
+            <img src="img/telegram.jpg" alt="telegram"><a href="#" class="text-dark">Join</a>
+            <img src="img/youtube.jpg" alt="youtube"><a href="#" class="text-dark">Subscribe</a>
+            <img src="img/instagram.jpg" alt="instagram"><a href="#" class="text-dark">Follow</a>
+        </div>
+
+    </section>
+
+    <section class="bg-dark text-light p-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4">
                     <h2><img src="img/mail.jpg" alt="mail">Contact us</h2>
-                    <p><a href="#">afrocinema@gmail.com</a></p>
-                </ul>
-                <ul>
-                    <h2>AFRO CINEMA</h2>
-                    <h3>IMPROVE YOUR FILM INSIGHT</h3>
-                </ul>
-                    <ul class="footer__ul">
-                        <li class="footer__li"><a href="#">FAQ</a></li>
-                        <li class="footer__li"><a href="#">PRIVACY</a></li>
-                        <li class="footer__li"><a href="#">TERMS and USE</a></li>
-                    </ul>
+                    <p><a href="#" class="text-light">afrocinema@gmail.com</a></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>AFRO CINEMA</h3>
+                    <h5>IMPROVE YOUR FILM INSIGHT</h5>
+                </div>
+                <div class="col-sm-4 text-end">
+                    <div class="row">
+                        <a href="#"class="text-light text-decoration-none">FAQ</a>
+                        <a href="#" class="text-light text-decoration-none">PRIVACY</a>
+                        <a href="#" class="text-light text-decoration-none">TERMS and USE</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
 
         </div>
-        <p class="footer__p"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
-    </footer>
+    </section>
+</footer>
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

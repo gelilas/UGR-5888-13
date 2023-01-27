@@ -4,81 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>AFRO CINEMA | Welcome</title>
 </head>
 <body>
-    <header class="header">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <div id="container__branding">
-               <h1 class="branding__h1"><span class="branding--highlight">AFRO</span> CINEMA</h1> 
-            </div>
-        
-            <nav class="header__nav">
-                <ul class="nav__ul">
-                    <li ><a href="Home.html">Home</a></li>
-                    <li><a href="See a movie.html">See a movie</a></li>
-                    <li><a href="Ticket & Price.html">Ticket & Price</a></li>
-                    <li class="current"><a href="Food & Drinks.html">Food & Drinks</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="About us.html">About us</a></li>
-                </ul>
-            </nav>
+            <p class="navbar-brand fs-1"><span class="navbar-brand text-warning fs-1"> AFRO</span>CINEMA</p>
             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="See a movie.html" class="nav-link">See a movie</a></li>
+                    <li class="nav-item"><a href="Ticket & Price.html" class="nav-link">Ticket & Price</a></li>
+                    <li class="nav-item"><a href="Food & Drinks.html" class="nav-link text-warning">Food & Drinks</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+
+                </ul>
+            </div>    
         </div>
-        <div class="header__common">
-            <h4> Food & Drinks</h4> 
-        
-        </div>
-    </header>
-    <main>
-        <section id="showcases">
-            <div class="container">
-                <img src="./img/Orange Wine And Food Fair .png" alt="Orange Wine And Food Fair" width="100%" height="500"><br>
+    </nav>
+</header>
+<main>
+    <section class="bg-dark text-light p-5">
+        <img class="img-fluid pe-4 ps-4 pb-3 w-100" src="./img/Orange Wine And Food Fair .png" alt="Orange Wine And Food Fair">
+        <div class="container">
+            <div class="d-sm-flex">
+                <img class="img-fluid pe-4 ps-4 pb-3 w-50"src="./img/popcorn.jpg" alt="popcorn">
+                <h2>GET YOUR POPCORNS NOW!!!</h2>
             </div>
-            <section id="showcases--grid">
-                <div class="showcases__box holder holder--flex" id="showcases--flex">
-                    <img src="./img/popcorn.jpg" alt="popcorn" >
-                    <h2>GET YOUR POPCORNS NOW!!!</h2>
-                </div>
-                
-                
-                <div class="showcases__box holder holder--flex" id="showcases--flex">
-                    <h2>GET YOUR FAVORITE TREAT!!!</h2>
-                    <img src="./img/snacks.jpg" alt="snacks" >
-                    
-                </div>
-            </section>
-        </section>
-    </main>
-    <footer class="footer">
-        <hr>    
-            <div class="footer__icons">
-                <ul class="footer_icons__ul">
-                    <li class="footer__li"><img src="img/facebook.jpg" alt="facebook"><a href="#">Like</a></li>
-                    <li class="footer__li"><img src="img/twitter.jpg" alt="twitter"><a href="#">Follow</a></li>
-                    <li class="footer__li"><img src="img/telegram.jpg" alt="telegram"><a href="#">Join</a></li>
-                    <li class="footer__li"><img src="img/youtube.jpg" alt="youtube"><a href="#">Subscribe</a></li>
-                    <li class="footer__li"><img src="img/instagram.jpg" alt="instagram"><a href="#">Follow</a></li>
-                </ul>
+
+            <div class="d-sm-flex">
+                <h2>GET YOUR FAVORITE TREAT!!!</h2>
+                <img class="img-fluid pe-4 ps-4 pb-3 w-50" src="./img/snacks.jpg" alt="snacks">
             </div>
-        <div class="footer__grid">
-                <ul>
-                    <h2><img src="img/mail.jpg" alt="mail">Contact us</h2>
-                    <p><a href="#">afrocinema@gmail.com</a></p>
-                </ul>
-                <ul>
-                    <h2>AFRO CINEMA</h2>
-                    <h3>IMPROVE YOUR FILM INSIGHT</h3>
-                </ul>
-                    <ul class="footer__ul">
-                        <li class="footer__li"><a href="#">FAQ</a></li>
-                        <li class="footer__li"><a href="#">PRIVACY</a></li>
-                        <li class="footer__li"><a href="#">TERMS and USE</a></li>
-                    </ul>
 
         </div>
-        <p class="footer__p"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
-    </footer>
+    </section>
+</main>
+
+<footer>
+    <section class="text-center p-10">
+        <div class="d-sm-flexd-flex aligns-items-center justify-content-center ">
+            <img src="img/facebook.jpg" alt="facebook"><a href="#" class="text-dark">Like</a>
+            <img src="img/twitter.jpg" alt="twitter"><a href="#" class="text-dark">Follow</a>
+            <img src="img/telegram.jpg" alt="telegram"><a href="#" class="text-dark">Join</a>
+            <img src="img/youtube.jpg" alt="youtube"><a href="#" class="text-dark">Subscribe</a>
+            <img src="img/instagram.jpg" alt="instagram"><a href="#" class="text-dark">Follow</a>
+        </div>
+
+    </section>
+
+    <section class="bg-dark text-light p-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2><img src="img/mail.jpg" alt="mail">Contact us</h2>
+                    <p><a href="#" class="text-light">afrocinema@gmail.com</a></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>AFRO CINEMA</h3>
+                    <h5>IMPROVE YOUR FILM INSIGHT</h5>
+                </div>
+                <div class="col-sm-4 text-end">
+                    <div class="row ">
+                        <a href="#"class="text-light text-decoration-none ">FAQ</a>
+                        <a href="#" class="text-light text-decoration-none">PRIVACY</a>
+                        <a href="#" class="text-light text-decoration-none">TERMS and USE</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
+
+        </div>
+    </section>
+</footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

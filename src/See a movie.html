@@ -4,118 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>AFRO CINEMA | Welcome</title>
 </head>
 <body>
-    <header class="header">
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <div id="container__branding">
-               <h1 class="branding__h1"><span class="branding--highlight">AFRO</span> CINEMA</h1> 
-            </div>
-        
-            <nav class="header__nav">
-                <ul class="nav__ul">
-                    <li><a href="Home.html">Home</a></li>
-                    <li class="current"><a href="See a movie.html">See a movie</a></li>
-                    <li><a href="Ticket & Price.html">Ticket & Price</a></li>
-                    <li><a href="Food & Drinks.html">Food & Drinks</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="About us.html">About us</a></li>
-                </ul>
-            </nav>
+            <p class="navbar-brand fs-1"><span class="navbar-brand text-warning fs-1"> AFRO</span>CINEMA</p>
             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="Home.html" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="See a movie.html" class="nav-link text-warning">See a movie</a></li>
+                    <li class="nav-item"><a href="Ticket & Price.html" class="nav-link">Ticket & Price</a></li>
+                    <li class="nav-item"><a href="Food & Drinks.html" class="nav-link">Food & Drinks</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="About us.html" class="nav-link">About us</a></li>
+
+                </ul>
+            </div>    
         </div>
-        <div class="header__common">
-            <h4> See a movie</h4> 
-        
-        </div>
-    </header>
-    <main>
-    <section id="main">
-        <div class="conatiner">
-            <h1>FULL SCHEDULE & TRAILERS</h1>
-
-            <div class="container__whole">
-
-                <div class="whole__lefts">
-
-                    <video width="500" height="500" controls >
+    </nav>
+</header>
+<main>
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <h1 class="text-start">FULL SCHEDULE & TRAILERS</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <video class="img-fluid w-50-sm "controls >
                     <source src="./video/pinocchio(1).mp4" type="video/mp4" alt="pinocchio">
                     <track kind="captions" src="./captions/pinocchio.vtt" srclang="en" label="English">
                     </video>
                     <p>pinocchio, dec 24 ,2:15pm</p>
-                    <video width="500" height="500" controls >
+                    <video class="img-fluid w-50-sm " controls >
                         <source src="./video/violent night(1).mp4" type="video/mp4" alt="violent night">
                         <track kind="captions" src="./captions/violent night.vtt" srclang="en" label="English">
                     </video>
                     <p>violent night, dec 25 ,8:15am</p> 
-                    <video width="500" height="500" controls >
+                    <video class="img-fluid w-50-sm " controls >
                         <source src="./video/black adam(1).mp4" type="video/mp4" alt="black adam">
                         <track kind="captions" src="captions/black adam.vtt" srclang="en" label="English">
                     </video>
                     <p>Black Adam, dec 30 ,1:15pm</p>
-                    <video width="500" height="500" controls >
+                    <video class="img-fluid w-50-sm " controls >
                         <source src="./video/sing(1).mp4" type="video/mp4" alt="SING 2">
                         <track kind="captions" src="./captions/sing.vtt" srclang="en" label="English">
                     </video>
                     <p>SING 2, dec 30 ,2:15pm</p>
 
                 </div>
-                
-                <div class="whole__rights">
-
-                    <video width="500" height="500" controls >
+                <div class="col-sm">
+                    <video class="img-fluid w-50-sm" controls >
                         <source src="./video/slumberkins.mp4" type="video/mp4" alt="slumberkins">
                         <track kind="captions" src="./captions/slumbrkins.vtt" srclang="en" label="English">
                     </video>
                     
                     <p>slumberkins, Jan 1 ,2:15pm</p>
-                    <video width="500" height="500" controls >
+                    <video class="img-fluid w-50-sm " controls >
                         <source src="./video/top gun maveric(1).mp4" type="video/mp4" alt="Top Gun Maveric">
                         <track kind="captions" src="./captions/top gun maveric.vtt" srclang="en" label="English">
                     </video>
                     <p>Top Gun Maveric, Jan 2, 2:15pm</p>
-                    <video width="500" height="500" controls >
+                    <video class="img-fluid w-50-sm " controls >
                         <source src="./video/avtar.mp4" type="video/mp4" alt="AVATAR 2">
                         <track kind="captions" src="./captions/avatar.vtt" srclang="en" label="English">
                     </video>
                     <p>AVATAR 2, Jan 3, 2:15pm</p>
 
                 </div>
-
             </div>
+
         </div>
     </section>
-    </main>
-    <footer class="footer">
-        <hr>    
-            <div class="footer__icons">
-                <ul class="footer_icons__ul">
-                    <li class="footer__li"><img src="img/facebook.jpg" alt="facebook"><a href="#">Like</a></li>
-                    <li class="footer__li"><img src="img/twitter.jpg" alt="twitter"><a href="#">Follow</a></li>
-                    <li class="footer__li"><img src="img/telegram.jpg" alt="telegram"><a href="#">Join</a></li>
-                    <li class="footer__li"><img src="img/youtube.jpg" alt="youtube"><a href="#">Subscribe</a></li>
-                    <li class="footer__li"><img src="img/instagram.jpg" alt="instagram"><a href="#">Follow</a></li>
-                </ul>
-            </div>
-        <div class="footer__grid">
-                <ul>
+</main>
+
+<footer>
+    <section class="text-center p-10">
+        <div class="d-sm-flexd-flex aligns-items-center justify-content-center ">
+            <img src="img/facebook.jpg" alt="facebook"><a href="#" class="text-dark">Like</a>
+            <img src="img/twitter.jpg" alt="twitter"><a href="#" class="text-dark">Follow</a>
+            <img src="img/telegram.jpg" alt="telegram"><a href="#" class="text-dark">Join</a>
+            <img src="img/youtube.jpg" alt="youtube"><a href="#" class="text-dark">Subscribe</a>
+            <img src="img/instagram.jpg" alt="instagram"><a href="#" class="text-dark">Follow</a>
+        </div>
+
+    </section>
+
+    <section class="bg-dark text-light p-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4">
                     <h2><img src="img/mail.jpg" alt="mail">Contact us</h2>
-                    <p><a href="#">afrocinema@gmail.com</a></p>
-                </ul>
-                <ul>
-                    <h2>AFRO CINEMA</h2>
-                    <h3>IMPROVE YOUR FILM INSIGHT</h3>
-                </ul>
-                    <ul class="footer__ul">
-                        <li class="footer__li"><a href="#">FAQ</a></li>
-                        <li class="footer__li"><a href="#">PRIVACY</a></li>
-                        <li class="footer__li"><a href="#">TERMS and USE</a></li>
-                    </ul>
+                    <p><a href="#" class="text-light">afrocinema@gmail.com</a></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>AFRO CINEMA</h3>
+                    <h5>IMPROVE YOUR FILM INSIGHT</h5>
+                </div>
+                <div class="col-sm-4 text-end">
+                    <div class="row">
+                        <a href="#"class="text-light text-decoration-none">FAQ</a>
+                        <a href="#" class="text-light text-decoration-none">PRIVACY</a>
+                        <a href="#" class="text-light text-decoration-none">TERMS and USE</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
 
         </div>
-        <p class="footer__p"> Copyright &copy; 2022 , AFRO CINEMA ALL RIGHTS RESERVED</p>
-    </footer>
+    </section>
+</footer>
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
